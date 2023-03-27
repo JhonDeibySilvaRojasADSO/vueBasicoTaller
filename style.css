@@ -1,0 +1,55 @@
+
+button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espacio entre el texto y el borde del botón */
+    border: none; /* Borde del botón */
+    cursor: pointer; /* Cambio del cursor del mouse cuando se pasa sobre el botón */
+    margin-bottom: 10px; /* Espacio entre los botones */
+  }
+  
+  /* Definición de los estilos del formulario */
+  form {
+    display: flex; /* Mostrar los elementos en línea */
+    flex-wrap: wrap; /* Ajustar los elementos en varias líneas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    align-items: center; /* Centrar los elementos verticalmente */
+  }
+  
+  /* Definición de los estilos de la tabla */
+  table {
+    border-collapse: collapse; /* Fusionar los bordes de las celdas */
+    width: 100%; /* Ancho de la tabla */
+  }
+  
+  td, th {
+    border: 1px solid #ddd; /* Borde de las celdas */
+    padding: 8px; /* Espacio entre el borde de las celdas y el contenido */
+    text-align: left; /* Alinear el texto a la izquierda */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo de las filas pares */
+  }
+  
+  /* Definición de los estilos del elemento de lista */
+  li {
+    list-style-type: none; /* Desactivar el tipo de viñeta */
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+  }
+  
+  /* Definición de los estilos de los input de texto */
+  input[type="text"], input[type="number"] {
+    padding: 10px; /* Espacio entre el borde del input y el texto */
+    margin-bottom: 10px; /* Espacio entre los input de texto */
+    border: none; /* Borde de los input de texto */
+    border-radius: 3px; /* Borde redondeado de los input de texto */
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); /* Sombra del input de texto */
+    width: 100%; /* Ancho de los input de texto */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho del input de texto */
+  }
+  
+  /* Definición de los estilos de los div contenedores */
+  div {
+    margin-bottom: 10px; /* Espacio entre los div contenedores */
+  }

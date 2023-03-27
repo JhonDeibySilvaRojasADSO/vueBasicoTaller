@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue js</title>
+    <script src="app.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <button v-if="list==null" @click.prevent="crearObjeto">crear o
+            bjeto</button>
+        <form v-else>
+            <input type="text" v-model="nom" placeholder="agregar nombre"><br>
+            <input type="text" v-model="apellio" placeholder="agregar apellido"><br>
+            
+            <button @click.prevent="agregarinicio">guardar al inicio</button><br>
+            <button @click.prevent="agregarfinal">guardar al final</button><br>
+            <button @click.prevent="eliminarfinal">eliminar al final</button><br>
+            <button @click.prevent="eliminarinicio">eliminar inicio</button><br>
+            <button @click.prevent="eliminartodo">eliminar todo</button><br><br>
+            <button @click.prevent="Mape">mape</button>
+
+            <input type="number" v-model="numero" > <button @click.prevent="elimarcualquiera(numero)">eliminar</button>
+           
+            <!-- <button v-show="(Object.values(obj).length)? true:false">eliminar</button> -->
+            
+                <div>
+                    <table>
+                        <tr>
+                            <td>indice  </td>
+                            <td>nombre  </td>
+                            <td>apellido  </td>
+                            <tr v-for="(nombres, numero) of list ">
+                                <td>{{numero}}</td>
+                                <td>{{nombres.jhnsito2}}</td>
+                                <td>{{nombres.apellido}}</td>
+                        </tr>
+                    </table>
+                    <div v-for="(viejo_jhon,id) of mapeo"> {{id}}      {{viejo_jhon.jhnsito2}}     {{viejo_jhon.apellido}}</div>
+                </div>
+                <!-- <li v-for="(nombres, ind) of list "> {{nombres.jhnsito2}} - <button
+                        @click.prevent="elimarcualquiera(ind)">x</button></li>
+
+            </div> <br>
+
+            <ul>
+
+                <li v-for="apellio of list">{{apellio.apellido}}</li>
+
+            </ul> -->
+        </form>
+    </div>
+
+
+</body>
+
+</html>
